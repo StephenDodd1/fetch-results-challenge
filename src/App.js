@@ -74,13 +74,6 @@ function App() {
   for (let i = 0; i < resultsFiltered.length; i++) {
     list[resultsFiltered[i].listId - 1].push(resultsFiltered[i]);
   }
-  const renderLists = () => {
-    for (let i = 0; i < list.length; i++) {
-      list[i].map((a, i) => {
-        return <li key={i}>{a.name}</li>;
-      });
-    }
-  };
   return (
     <div className="App">
       <header className="App-header">Fetch Rewards - Display Results</header>
